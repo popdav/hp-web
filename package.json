@@ -1,0 +1,29 @@
+{
+  "name": "pp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "child_process": "^1.0.2",
+    "csv-string": "^3.1.6",
+    "event-stream": "^4.0.1",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "method-override": "^3.0.0",
+    "mongodb": "^3.3.0-beta2",
+    "morgan": "^1.9.1",
+    "promise": "^8.0.3",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  }
+}
