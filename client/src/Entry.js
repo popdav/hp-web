@@ -17,7 +17,8 @@ class Entry extends Component {
     this.state = {
         showFunc : props.showFunc,
         showing : props.showing,
-        path: props.path,
+        // path: props.path,
+        // inputpath: props.inputpath,
         input: ''
     }
 
@@ -51,10 +52,12 @@ class Entry extends Component {
     let styleT = {};
     if(!this.props.showing)
       styleT = {display: "none"};
+    
+    const placeHoleder = "Postcode\nAddress1\nAddress2\nAddress3\nAddress4\n"
     return (
         <div style={styleT} className="form-group EntryClass">
             <label htmlFor="FormControlTextarea">Enter data:</label>
-            <textarea className="form-control" id="FormControlTextarea" rows="5" ref={this.inputRef} onChange={this.handleTextareaInput}></textarea>
+            <textarea placeholder={placeHoleder} className="form-control" id="FormControlTextarea" rows="5" ref={this.inputRef} onChange={this.handleTextareaInput}></textarea>
             <button type="submit" className="btn btn-primary" onClick={this.submitClick}>Submit</button>
         </div>
     )

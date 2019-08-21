@@ -12,7 +12,7 @@ class Table extends Component {
     this.state = {
       showFunc : props.showFunc,
       showing : props.showing,
-      path: props.path,
+      // path: props.path,
       data: [],
       dataOriginal: [],
       keys: [],
@@ -440,7 +440,7 @@ class Table extends Component {
     const subArr = arr.slice(indexOfFirst, indeOfLast);
     return (
       <div style={styleT} className="">
-          <button className="btn btn-primary back-btn" onClick={this.handleHomeClick}>Home</button>
+          {/* <button className="btn btn-primary back-btn" onClick={this.handleHomeClick}>Home</button>
 
           <br />
           <label>
@@ -458,7 +458,7 @@ class Table extends Component {
             <input ref={this.findRef} onChange={this.handleFindChange} onKeyDown={this.enterPress} className="form-control input-font-size" id="inputFind"/>
             <button onClick={this.handleFindQuery} className="find-btn btn">Find</button>
             <button onClick={this.resetClick} className="btn btn-primary reset-btn">Reset</button>
-          </div>
+          </div> */}
             
           <br/>
 
@@ -482,7 +482,7 @@ class Table extends Component {
             </tbody>
           </table>
 
-          <nav className="Pagination">
+          {/* <nav className="Pagination">
             <ul className="pagination">
               <li className="page-item"><button onClick={this.handlePagingArrowClick} id="first" className="page-link" href="#">{'<<'}</button></li>
               <li className="page-item"><button onClick={this.handlePagingArrowClick} id="previous" className="page-link" href="#">{'<'}</button></li>
@@ -494,7 +494,7 @@ class Table extends Component {
               <li className="page-item"><button onClick={this.handlePagingArrowClick} id="next" className="page-link" href="#">{'>'}</button></li>
               <li className="page-item"><button onClick={this.handlePagingArrowClick} id="last" className="page-link" href="#">{'>>'}</button></li>
             </ul>
-          </nav>
+          </nav> */}
       </div>
     )
   }

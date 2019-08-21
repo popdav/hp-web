@@ -13,8 +13,7 @@ class App extends Component {
     super()
     this.state = {
       entryShow: true,
-      tableShow: false,
-      csvPath : '/home/david/Rista/linuxProgramParser/people.csv'
+      tableShow: false
     }
 
     this.showChangeProp = this.showChangeProp.bind(this)
@@ -22,8 +21,7 @@ class App extends Component {
   
   showChangeProp() {
     this.setState({
-      entryShow: !this.state.entryShow,
-      tableShow: !this.state.tableShow
+      tableShow: true
     })
   }
 
@@ -31,8 +29,8 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div>
-          <Entry showing={this.state.entryShow} showFunc={this.showChangeProp} path={this.state.csvPath}/>
-          <Table showing={this.state.tableShow} showFunc={this.showChangeProp} path={this.state.csvPath}/>
+          <Entry showing={this.state.entryShow} showFunc={this.showChangeProp} />
+          <Table showing={this.state.tableShow} showFunc={this.showChangeProp} />
         </div>
       </Provider>
     )

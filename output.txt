@@ -1,0 +1,2 @@
+TYPE|ID|Address1|Address2|Address3|Address4|Country|Postcode|POBOX|
+TEST|1|25 Links Road||Poole|Dorset|England|BH14 9QR||	
