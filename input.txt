@@ -1,2 +1,2 @@
 TYPE|ID|Address1|Address2|Address3|Address4|Country|Postcode|POBOX
-TEST|1|asd asd 3|asd 24 d|asd r32|asd r32|England|sw6 2nz||
+TEST|1|||||England|||
